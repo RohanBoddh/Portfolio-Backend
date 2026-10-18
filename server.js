@@ -16,7 +16,11 @@ connectDB();
 
 const allowedOrigins = process.env.FRONTEND_URL
   ? process.env.FRONTEND_URL.split(",").map((item) => item.trim())
-  : ["http://localhost:5173", "http://localhost:3000"];
+  : [
+      "https://portfolio-frontend-delta-hazel.vercel.app",
+      "http://localhost:5173",
+      "http://localhost:3000",
+    ];
 
 app.use(
   cors({
